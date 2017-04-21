@@ -123,7 +123,7 @@ public static void main(String[] args) throws IOException {
 ### 类级文档
 在每个Java源代码的顶部，import语句之下和类声明之上，你必须增加一个文档块：
 
-```javadoc
+```java
 /**
     @author <your name(s)>
     @version <today’s date>
@@ -143,7 +143,7 @@ public static void main(String[] args) throws IOException {
 
 该方法的文档被添加在方法签名之上，类似：
 
-```javadoc
+```java
 /**
     Indicate whether a value is within a range of values
     @param min Minimum value in the range
