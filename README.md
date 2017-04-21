@@ -19,7 +19,7 @@ todo
 
 | 课时数 | 课时标题 | 实验 | 项目 |
 |:-----:|:--------|:-------|:-------| 
-|第 1 课| 介绍 | JDK, Compiling, Javadoc, Eclipse, Strings | NA |
+|第 1 课| 介绍 | [JDK, Compiling, Javadoc, Eclipse, Strings](lab/lab01/README.md) | NA |
 |第 2 课| UML, OO，抽象，封装，对象 | 单元测试 | NA |
 |第 3 课| 文件处理 | 文件中文本读写 | 项目1 |
 |第 4 课| 继承，多态和异常 | 继承和多态 | NA |
