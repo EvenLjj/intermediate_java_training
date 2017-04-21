@@ -196,7 +196,59 @@ public class ItemTest
     Assert.assertEquals(10.1, item.getWeight(), 0.01);
 ```
 
+上面的测试代码通过```getWeight```访问器方法查询对象的方法，并和期望值10.1比较。注意这里不能简单测试两个double值相等，而应该用支持double版本的```assertEquals()```方法，比较两个值得差值小于0.01。如果比较为真，那么断言就pass。相反，如果两个的差值大于0.01，那么测试会失败。
 
+`assertTrue()`可以测试任意的条件，例如：
+
+```java
+    Assert.assertTrue(item.getName().equals("Master Sword"));
+```
+
+要求name必须和"Master Sword"完全相等（```String.equals()```需要比较的字符串完全相等才返回真）。本文最后有**Assert**类的Java官方文档链接。
+
+在Eclipse中，你可以通过点击![junit icon](images/junit_icon.png)(在上面的工具面板上)然后选择相应的单元测试运行。一个JUnit窗口面板会出现在界面的左手边，并展示测试是成功还是失败。如果一个测试失败，你可以通过点击它以进一步查看哪一行导致了失败。失败表明你的实现类中（或者测试本身）有bug。
+
+*EclEmma*会将被测试过的代码高亮，表明单元测试的覆盖情况。特别的，Eclipse会相应的高亮每一行代码根据：
+- 绿色：该行已经被一个或者多个测试覆盖到
+- 红色：该行没有被覆盖到
+- 黄色：仅有部分分支（if, while, for, switch）被测试覆盖到
+你的目标是让所有的类被测试覆盖并以绿色高亮。
+
+当你写测试的时候，你不应该依赖实现来生成预期的结果，相反，你应该通过手算推导出期望值，这样，你的测试可以独立于实现。同时，写方法实现前先写测试是一个好的实践。
+
+# 单元测试Inventory类
+该实验中你的任务是为**Inventory**类中的方法写一组测试，过程如下：
+
+### 步骤1
+创建一个新的单元测试类：
+1. 在*package explorer*中，右击*Inventry.java*
+2. 选择*New/JUnit Test Case*
+3. 选择*New JUnit 4 test*
+4. 源目录应该是*lab2/src*
+5. 名称应当是*InventoryTest*
+6. 被测试类应当是*Inventory*
+7. 点击*Finish*，这会创建并打开一个称为*InventoryTest*的新类
+
+### 步骤2
+
+写一组测试以确保**Inventory**类的所有方法功能正确。注意在这些测试中，你需要至少创建一个**Inventory**对象，填充各种名称，高度和价格的*Item*对象。你写的这些测试要*覆盖*类方法中的所有情况。也就是说，你要测试代码的所有可能路径（例如，每个*if*和*else*分支）。
+
+### 步骤3
+在你执行测试时，你会发现**Inventory**类中的几个错误。修复这些错误，使用单元测试确保所有bugs已经被修复。
+
+# 最后步骤
+
+### 步骤1
+使用Eclipse生成Javadoc
+- 选择*Project/Generate Javadoc...*
+- 确保你的项目被选中（包含Driver, Item和Inventory类）
+- 选择*Private*可见性
+- 使用缺省的目标目录
+- 点击*Finish*
+
+
+### 步骤2
+在Eclipse或者你常用的浏览器中打开lab2/doc/index.html文件。 确保Javadoc中包含你的类，所有的方法包含必要的Javadoc文档。
 
 
 # 参考
