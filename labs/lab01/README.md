@@ -131,7 +131,7 @@ public static void main(String[] args) throws IOException {
     <A short, abstract description of the file>
 */
 ```
-其中<some text>表示你要替换的部分。
+其中```<some text>```表示你要替换的部分。
 
 
 ### 方法级文档
@@ -202,9 +202,9 @@ public static boolean isInRange(double min, double max, double value)
 
 
 # 注意
-- ### 程序正确性和单元测试
-- ### 代码风格
-- ### 设计和可读性
+- 程序正确性和单元测试
+- 代码风格
+- 设计和可读性
 
 
 
