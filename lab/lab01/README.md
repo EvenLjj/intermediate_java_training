@@ -78,7 +78,9 @@ CLASS: info[0], Enrolled: info[1], Max clas size: info[2], Sections: info[3]
 public static void main(String[] args) throws IOException {
     BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
     String input = br.readLine();
+
     // Add two more lines of code here .
+
     br.close() ;
 ``` 
 在前面的两行代码执行之后，```input```变量会包含你在控制台上输入的值（在你按回车键之后）。
@@ -114,7 +116,95 @@ public static void main(String[] args) throws IOException {
 - 点击*Finish*
 
 ### 步骤11
+在Eclipse或者你常用的浏览器中打开lab1/doc/index.html文件。 确保Javadoc中包含你的类，所有的方法包含必要的Javadoc文档。
 
+# 项目文档
+
+### 类级文档
+在每个Java源代码的顶部，import语句之下和类声明之上，你必须增加一个文档块：
+
+```javadoc
+/**
+    @author <your name(s)>
+    @version <today’s date>
+    Lab <number>
+    <A short, abstract description of the file>
+*/
+```
+其中<some text>表示你要替换的部分。
+
+
+### 方法级文档
+方法签明上方必须用标准Javadoc标记添加文档。 文档应简洁明了，能使其他程序员快速理解方法的用途，但无需细到方法的实现细节。例如，考虑用于检查一个值是否落在一个范围的方法，签名如下：
+
+```java
+    public static boolean isInRange(double min, double max, double value)
+```
+
+该方法的文档被添加在方法签名之上，类似：
+
+```javadoc
+/**
+    Indicate whether a value is within a range of values
+    @param min Minimum value in the range
+    @param max Maximum value in the range
+    @param value The value being tested
+    @return True if value is between min and max. False if outside this range.
+*/
+```
+
+注意该例子包含所有需要的文档元素：
+
+- 一个简洁明了的描述说明方法的用途（而非具体实现），
+- 参数名列表和每个参数含义的简短描述，
+- 返回值的简短描述
+
+### 内联文档
+在每个方法内部，你也必须包含描述方法执行过程的文档。 文档应该足够详尽，让其他程序员理解你的做法，并在必要时能够修改代码。 通常，此类文档添加在要解释的代码之前，以单行注释"//"开始并独占一行或多行。 但是无需细到每一行代码都添加注释，通常，我们为几行代码组成的逻辑代码块添加内联文档。
+
+另外，内联文档应该解释逻辑意图，而非代码含义的简单重复， 下面是一个例子：
+
+```java
+public static boolean isInRange(double min, double max, double value)
+{
+    // Check lower bound
+    if (value < min)
+    {
+        return false;
+    }
+    
+    // Check upper bound
+    if (value > max)
+    {
+        return false;
+    }
+    
+    // Within the boundaries
+    return true;
+}
+
+```
+
+# 程序格式化
+下面是一些推荐的程序风格：
+- 恰当缩进，缩进必须只用空格（而非tabs)
+- 在条件关键字（例如if和while）和后续的左括号之间加一个空格
+- 花括号```{```另起一行
+- 代码块有花括号包围。例如，```if(...)```之后的语句另起一行，以花括号开始
+- 一行最多不超过80个字符
+- 所有声明的变量都被使用
+- 所有导入语句都被使用
+
+# 提示
+- 关于如何分割Strings类，请参考**String**类API
+- 关于如何将字符串转换为整数，请参考**Integer**类API
+- Javadoc文档中有到官方Java API文档的链接
+
+
+# 注意
+- ### 程序正确性和单元测试
+- ### 代码风格
+- ### 设计和可读性
 
 
 
