@@ -15,8 +15,7 @@
 - 扫描对象数组并显示符合某个条件的项。
 
 # 实验步骤
-
--步骤1
+步骤1
 下载[lab3.zip](https://github.com/ppdai/intermediate_java_training/tree/master/labs/lab03/lab3.zip)
 
 ### 步骤2
@@ -67,12 +66,12 @@
 - `isFirstGenLegendary()`，该方法表明一个*Pokemon*对象是否是第一代并且是传奇的
 - `isThirdGenPsychic()`，该方法表明一个*Pokemon*对象是否是第三代并且是通灵类型的
 - `isLegendaryWater`，该方法表明一个*Pokemon*对象是否是第三代水类型的
-- `toString()`，该方法返回一个字符串，格式见[lab3-expectedOutput](lab-expectedOutput.md)
+- `toString()`，该方法返回一个字符串，格式见[lab3-expectedOutput](lab3-expectedOutput.md)
 - 一组访问器getters方法，可以用Eclipse自动生成
 
 **PokemonTeam**类表示一个*Pokemon*团队，下面是要实现的方法：
 - `PokemonTeam`构造函数，传入一个文件名，读取文件，为文件中的每一行创建一个*Pokemon*对象，并添加到一个ArrayList中
-- `toString()`，该方法返回一个字符串，格式见[lab3-expectedOutput](lab-expectedOutput.md)
+- `toString()`，该方法返回一个字符串，格式见[lab3-expectedOutput](lab3-expectedOutput.md)
 
 **Driver**类包含一个PokemonTeam对象和main()方法，在main()方法中：
 - 用指定的文件名创建一个*PokemonTeam*对象
@@ -121,8 +120,6 @@ Eclipse能够为你自动生成访问器(getters & setters)方法，方法如下
 
 # 参考
 - [BufferedReader API](http://docs.oracle.com/javase/8/docs/api/java/io/BufferedReader.html)
-- 
-
 
 
 
