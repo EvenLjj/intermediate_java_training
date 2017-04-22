@@ -1,4 +1,4 @@
-实验二，读取文件数据
+实验三，读取文件数据
 ======
 
 # 介绍
@@ -106,6 +106,8 @@ Eclipse能够为你自动生成访问器(getters & setters)方法，方法如下
 从菜单中，你可以选择需要生成的每个类变量，你可以选择生成所有的getters，或者setters，或者都生成。对于本次实验，记住你要创建的是不可变（immutable）类。
 
 #最后步骤
+
+### 步骤1
 使用Eclipse生成Javadoc
 - 选择*Project/Generate Javadoc...*
 - 确保你的项目被选中（包含Driver, Pokemon和PokemonTeam类）
