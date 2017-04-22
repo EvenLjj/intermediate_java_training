@@ -21,7 +21,7 @@ todo
 |:-----:|:--------|:-------|:-------| 
 |第 1 课| 介绍 | [JDK, Compiling, Javadoc, Eclipse, Strings](labs/lab01/README.md) | NA |
 |第 2 课| UML, OO，抽象，封装，对象 | [单元测试](labs/lab02/README.md) | NA |
-|第 3 课| 文件处理 | [文件读取]((labs/lab03/README.md)) | 项目1 |
+|第 3 课| 文件处理 | [文件读取](labs/lab03/README.md) | 项目1 |
 |第 4 课| 继承，多态和异常 | 继承和多态 | NA |
 |第 5 课| 抽象类和接口 | 例外 | 项目2 |
 |第 6 课| 接口，泛型 | 抽象类和接口 | NA |
