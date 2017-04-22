@@ -38,7 +38,7 @@
 
 下图是打分项目相关类的UML表示，你的任务是实现这些类和相应的单元测试：
 
-![graded items uml](images\graded_items_uml.png)
+![graded items uml](images/graded_items_uml.png)
 
 从Exam到GradedItem表示Exam is-a GradedItem，你应该用继承来表达这种关系，Assignment和GradedItem之间的类关系也一样。
 
