@@ -17,7 +17,7 @@
 # 准备
 
 将已有的lab4实现导入你的eclipse工作区
-1. 下载[lab4实现](https://github.com/ppdai/intermediate_java_training/tree/master/labs/lab04/lab4.zip)
+1. 下载[lab4实现](lab4.zip)
 2. 在Eclipse中，选择*File/Import*
 3. 选择*General/Existing projects into workspace.* 点击*Next*
 4. 选择*Select archive file*，导航到lab4.zip文件，点击*Next*

@@ -23,7 +23,7 @@ todo
 |第 2 课| UML, OO，抽象，封装，对象 | [单元测试](labs/lab02/README.md) | NA |
 |第 3 课| 文件处理 | [文件读取](labs/lab03/README.md) | [项目1](projects/proj1/README.md) |
 |第 4 课| 继承，多态和异常 | [继承](labs/lab04/README.md)  | NA |
-|第 5 课| 抽象类和接口 | 例外 | 项目2 |
+|第 5 课| 抽象类和接口 | [异常](labs/lab05/README.md) | 项目2 |
 |第 6 课| 接口，泛型 | 抽象类和接口 | NA |
 |第 7 课| 链表和栈 | 泛型、链表和队列 | NA |
 |第 8 课| Java集合框架，枚举 | HashMaps, 枚举, Java集合框架 | 项目3 |
