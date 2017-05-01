@@ -25,8 +25,8 @@ todo
 |第 4 课| 继承，多态和异常 | [继承](labs/lab04/README.md)  | NA |
 |第 5 课| 抽象类和接口 | [异常](labs/lab05/README.md) | [项目2](projects/proj2/README.md) |
 |第 6 课| 接口，泛型 | [抽象类和接口](labs/lab06/README.md) | NA |
-|第 7 课| 链表和栈 | 泛型、链表和队列 | NA |
-|第 8 课| Java集合框架，枚举 | HashMaps, 枚举, Java集合框架 | 项目3 |
+|第 7 课| 链表和栈 | [泛型、链表和队列](labs/lab07/README.md) | NA |
+|第 8 课| Java集合框架，枚举 | [HashMaps, 枚举, Java集合框架](labs/lab08/README.md) | 项目3 |
 |第 9 课| GUI基础，事件 | GUI基础 | NA |
 |第 10 课| GUI&Graphics | Graphics绘制形状 | 项目4 |
 |第 11 课| 事件驱动编程 | 事件驱动绘图 | NA | 

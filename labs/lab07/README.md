@@ -53,7 +53,68 @@
 从我们在lab7.zip中提供的类文件开始。
 1. 类**Card**，**Character**，**PlebiansDeck**，和**Driver**已经被完整实现了，**不应该再被修改**。
 2. **Deck**类是一个泛型和抽象类，该类已经为你部分实现，你需要完整实现在UML中列出的每个方法。
-3. 创建和实现一个枚举类**Fate**.
+3. 创建和实现一个枚举类**Fate**，每个枚举由相关联的字符串类描述。*RICHES*表示玩家的命运是"你是帝王"，*REVOLUTION*表示玩家的命运是"你是平民"。每个Fate枚举的字符串表示应当只返回玩家的命运。
+4. 创建和实现类**FateDeck**，这副牌的名称应当存为"The Deck of Fate"。*populateDeck()*方法应当首先销毁之前创建的牌，然后将牌填充一张*RICHES*类型的牌和一张*REVOLUTION*类型的牌。
+5. 创建和实现类**EmperorsDeck**，这副牌的名称应当存为"Emperor's Deck"。*populateDeck()*方法应当首先销毁之前创建的牌，然后填充一副完整的牌。特别地，该方法应该放置4张*PATRICIAN*类型的牌和1张*EMPEROR*类型的牌。
+6. **Game**类已经为你部分实现，你需要实现*play()*方法。*play()*在给定一副帝王牌、一副平民牌和一副命运牌的情况下，玩一把游戏（规则如上面的命运牌游戏所述），然后报告输出玩家接收到的点数。*这些点数必须使用Game类中创建的常量，包括constPlayerLost修正值*：
+    - 如果出现平民/帝王组合牌，失败方玩家得constPlebeianEmperor常量乘以constPlayerLost修正值，
+    - 如果出现贵族/费贵族组合牌，失败方玩家得constPatricianNonPatrician常量乘以constPlayerLost修正值。
+7. 创建JUnit单元测试，完整地测试你创建和实现的所有类和方法
+    - 确保所有功能正确
+    - 确保方法中的所有情况被覆盖。
+
+# 输出样例
+下面是一个完整程序的输出，玩6把，结束后报告玩家的总分数，你实现的游戏的输出细节可能有所不同：
+
+```
+////////// FATE GAME START //////////
+Player's Current Total Score: 0
+///// You are the Plebeian /////
+You: Patrician
+Opp: Patrician
+You: Patrician
+Opp: Patrician
+You: Patrician
+Opp: Patrician
+You: Patrician
+Opp: Patrician
+You: Plebeian
+Opp: Emperor
+Player's Current Total Score: 4
+///// Your are the Plebeian /////
+You: Plebeian
+Opp: Emperor
+Player's Current Total Score: 8
+///// Your are the Emperor /////
+You: Emperor
+Opp: Patrician
+Player's Current Total Score: 9
+///// You are the Plebeian /////
+You: Patrician
+Opp: Patrician
+You: Patrician
+Opp: Patrician
+You: Patrician
+Opp: Emperor
+Player's Current Total Score: 8
+///// Your are the Emperor /////
+You: Patrician
+Opp: Patrician
+You: Emperor
+Opp: Patrician
+Player's Current Total Score: 9
+///// You are the Plebeian /////
+You: Patrician
+Opp: Patrician
+You: Patrician
+Opp: Patrician
+You: Patrician
+Opp: Patrician
+You: Patrician
+Opp: Emperor
+////////// FATE GAME END //////////
+Player's Final Score: 8
+```
 
 
 # 最后步骤
@@ -68,5 +129,5 @@
 
 
 ### 步骤2
-在Eclipse或者你常用的浏览器中打开lab6/doc/index.html文件。 确保Javadoc中包含你的类，所有的方法包含必要的Javadoc文档。
+在Eclipse或者你常用的浏览器中打开lab7/doc/index.html文件。 确保Javadoc中包含你的类，所有的方法包含必要的Javadoc文档。
 
