@@ -182,7 +182,7 @@ Min Solar Radiation:
 使用Eclipse为你的所有类生成Javadoc，
 
 ### 步骤2
-在Eclipse或者你常用的浏览器中打开project1/doc/index.html文件。 确保Javadoc中包含你的类（主要类和三个单元测试类），所有的方法包含必要的Javadoc文档。
+在Eclipse或者你常用的浏览器中打开project2/doc/index.html文件。 确保Javadoc中包含你的类（主要类和三个单元测试类），所有的方法包含必要的Javadoc文档。
 
 # 注意
 - 有多重方法定义一年的平均风速，在本项目中，我们将平均风速定义为一年12个月的平均值。
