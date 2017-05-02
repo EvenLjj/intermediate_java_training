@@ -28,7 +28,7 @@ todo
 |第 7 课| 链表和栈 | [泛型、链表和队列](labs/lab07/README.md) | NA |
 |第 8 课| Java集合框架，枚举 | [HashMaps, 枚举, Java集合框架](labs/lab08/README.md) | [项目3](projects/proj3/README.md) |
 |第 9 课| GUI基础，事件 | [GUI基础](labs/lab09/README.md) | NA |
-|第 10 课| GUI&Graphics | Graphics绘制形状 | 项目4 |
+|第 10 课| GUI&Graphics | [Graphics绘制形状](labs/lab10/README.md) | 项目4 |
 |第 11 课| 事件驱动编程 | 事件驱动绘图 | NA | 
 |第 12 课| GUI组件，二进制文件I/O | 二进制文件I/O | NA |
 |第 13 课| 递归 | 递归 | 项目5 |

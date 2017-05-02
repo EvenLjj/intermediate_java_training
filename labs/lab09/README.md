@@ -17,7 +17,7 @@
 - 下载[lab9](lab9.zip)实现
 - 在Eclipse中，选择*File/Import*
 - 选择*General/Existing projects into worksapce*，点击*Next*
-- 选择*Select archive file*，导航到lab9.zip文件，点击*Next*
+- 选择*Select archive file*，导航到lab9.zip文件，点击*Finish*
 
 # 简单数制转换器
 下面是我们将创建的计算器的GUI展示，用户在第一个文本框中输入一个十进制数字，用户有四种数制转换方式可以选择：二进制binary，八进制octal，十进制decimal和十六进制hexadecimal。当程序第一次启动时，二进制按钮应当被选中。
