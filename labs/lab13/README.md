@@ -87,6 +87,7 @@ UML中展示的所有类在lab12.zip中都有提供。
 每次调用该方法，使用*generateColor()*返回的颜色来画三角形（三角形使用基色画出）。
 如果*drawCircle*被设置成true，你需要在当前三角形的顶部画一个内接圆形；使用*generateColor()*方法返回的颜色绘制（圆形用合成色绘制）。
 内接圆形看似如下：
+
 ![circle](images/circle.png)
 
 *SierpinskiTriangle*类有一个称为*computeVertex()*的助手方法，接受一个中心点，一个半径和一个角度作为参数。该方法开始时在指定中心点上方*radius*单位的点，后续点依次围绕中心点旋转一个角度。
