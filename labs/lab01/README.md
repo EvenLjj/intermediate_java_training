@@ -52,7 +52,7 @@
    - s1表示只包含字母数字字符的字符串
    - s2,s3表示只包含数字字符的字符串（不含空格）
 
-例如，*Java,153,50*表示满足条件的一个字符串，其中*s1 = Java*，*s2 = 153*，*s3 = 50*. 在程序中，我们将*s1*解释为课程名，*s2*解释为课程登记数，*s3*解释为最大课程人数。
+例如，*Java,153,50*表示满足条件的一个字符串，其中*s1 = Java*，*s2 = 153*，*s3 = 50*。在程序中，我们将*s1*解释为课程名，*s2*解释为课程登记人数，*s3*解释为课程最多人数。
 该方法将*s1*以全部大写方式存入```info[0]```，将*s2*存入```info[1]```，将*s3*存入```info[2]```，并将*(s2 + s3 - 1)/s3*，所需的课程开班数，存入```info[3]```。注意最后一个操作需要做类型转换。
 - 必须包含方法：
 
@@ -62,7 +62,7 @@
 该方法返回如下形式的字符串：
 
 ```
-CLASS: info[0], Enrolled: info[1], Max clas size: info[2], Sections: info[3]
+CLASS: info[0], Enrolled: info[1], Max class size: info[2], Sections: info[3]
 ```
 
 其中*info[i]*表示数组中第i个元素。
@@ -72,7 +72,7 @@ CLASS: info[0], Enrolled: info[1], Max clas size: info[2], Sections: info[3]
 - 所有的方法必须带有Javadoc注释（细节见本文最后）。
 
 ### 步骤7
-将你的Driver类实现替换为：
+将你的Driver类的实现替换为：
 
 ```java
 public static void main(String[] args) throws IOException {
@@ -202,7 +202,7 @@ public static boolean isInRange(double min, double max, double value)
 
 
 # 注意
-- 程序正确性和单元测试
+- 程序的正确性和单元测试
 - 代码风格
 - 设计和可读性
 
