@@ -1,25 +1,30 @@
 《Java 中级编程》
 =======
 
-一门面向企业级开发培训的，开放的，Java中级编程课程，主要以实验驱动方式培训。
+一门开放的，面向企业级开发培训的Java中级编程课程，主要以实验驱动方式培训。
 
 ### 基本信息
 
 - **教程讲师**: archcentric
 - **教程简介**: 一门面向企业级开发培训的Java中级编程课程，面向中级Java程序员。
 
-todo
-
 ### 课程目标
+- 编程基础Core Java
+- 编程技能
+    - 设计、实现、测试和调试程序
+    - 使用各种编程工具（Git, Eclipse, JUnit等）
+- 编程思维
+    - 抽象（搭积木）
+    - OO原理：继承、封装、多态和泛型
+    - 递归分治
 - 分析问题，定义需求，设计和开发解决方案
-- 掌握Java面向对象编程技术（抽象、继承、多态、封装和泛型）
-- 掌握集成开发、调试和单元测试技术
+- 为企业级编程和软件研发生涯打下坚持的基础
 
 ### 教程大纲
 
 | 课时数 | 课时标题 | 实验 | 项目 |
 |:-----:|:--------|:-------|:-------| 
-|第 1 课| 介绍 | [JDK, Compiling, Javadoc, Eclipse, Strings](labs/lab01/README.md) | NA |
+|第 1 课| [介绍](lectures/lecture01.pptx) | [JDK, Compiling, Javadoc, Eclipse, Strings](labs/lab01/README.md) | NA |
 |第 2 课| UML, OO，抽象，封装，对象 | [单元测试](labs/lab02/README.md) | NA |
 |第 3 课| 文件处理 | [文件读取](labs/lab03/README.md) | [项目1](projects/proj1/README.md) |
 |第 4 课| 继承，多态和异常 | [继承](labs/lab04/README.md)  | NA |
@@ -33,9 +38,6 @@ todo
 |第 12 课| GUI组件，二进制文件I/O | [二进制文件I/O](lab/lab12/README.md) | NA |
 |第 13 课| 递归 | [递归](labs/lab13/README.md) | [项目5](projects/proj5/README.md) |
 
-### 相关资源
-todo
-
 ### 授权许可
 
 除特别声明外，本套教程中的内容使用 CC BY-SA 3.0 License（创作共用 署名-相同方式共享 3.0 许可协议）授权，代码遵循 BSD 3-Clause License（3 项条款的 BSD 许可协议）。
@@ -43,6 +45,11 @@ todo
 ### 参考资料
 
 - [《Programming Structures and Abstractions》](http://www.cs.ou.edu/~fagg/classes/cs2334/) 本课程的主要参考
+- [Java JDK 8 Documentation](https://docs.oracle.com/javase/8/docs/)
+- [Java JDK 8 API](https://docs.oracle.com/javase/8/docs/api/)
+- [Eclipse tutoiral](http://www.vogella.com/tutorials/Eclipse/article.html)
+- [Umlet](http://umlet.com/)：UML绘图工具
+- [UML for Java Programmer](http://www.csd.uoc.gr/~hy252/references/UML_for_Java_Programmers-Book.pdf)
 
 
 
