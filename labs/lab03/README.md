@@ -15,8 +15,9 @@
 - 扫描对象数组并显示符合某个条件的项。
 
 # 实验步骤
-步骤1
-下载[lab3.zip](https://github.com/ppdai/intermediate_java_training/tree/master/labs/lab03/lab3.zip)
+
+###步骤1
+下载[lab3.zip](labs/lab03/lab3.zip)
 
 ### 步骤2
 *File*菜单：*Import*
@@ -40,7 +41,7 @@
 在本试验中，你将解析由[Kaggle网站](https://www.kaggle.com/abcsds/pokemon)编辑和提供的包含Pokemon(游戏小精灵)列表的文件，该文件包含每个Pokemon的各种统计。文件以CSV(comma separated values)的形式将信息编码在一个表格中。如果你在Eclipse中双击这个文件，它会试图用如Excel这样的电子表格程序打开。你也可以用如文本编辑器以原始文件形式打开。
 
 文件中的每一行编码一个Pokemon的信息，每个Pokemon有13个不同的值描述，每个值用逗号分隔，包括：
-1. Pokemon的编号(number)，注意Pokemon的编号并非值唯一的，例如，三代不的Charizard(喷火龙）都用编号6，这不会影响项目的结果
+1. Pokemon的编号(number)，注意Pokemon的编号不是值唯一的，例如，三代不同的Charizard(喷火龙）都用编号6，这不会影响项目的结果
 2. Pokemon的名称(name)，同样，这也不是唯一的
 3. Pokemon的第一类型(type)
 4. Pokemon的第二类型(type)，可以为空
@@ -80,7 +81,7 @@
 # 读取文件
 PokemonTeam构造函数必须读取和解析一个文件，下面的样例代码读取每一行并将其加入列表：
 ```java
-ArrayList<String> list = new ArrayList<String >()； //ArrayList of Strings
+ArrayList<String> list = new ArrayList<String>()； // ArrayList of Strings
     BufferedReader br = new BufferedReader(new FileReader("filename.txt"));
     
     String strg = br.readLine(); // Read first line
