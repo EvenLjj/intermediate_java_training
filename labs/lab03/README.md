@@ -17,7 +17,7 @@
 # 实验步骤
 
 ###步骤1
-下载[lab3.zip](labs/lab03/lab3.zip)
+下载[lab3.zip](lab3.zip)
 
 ### 步骤2
 *File*菜单：*Import*
