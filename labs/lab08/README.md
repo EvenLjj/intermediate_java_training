@@ -2,21 +2,21 @@
 ======
 
 # 介绍
-在本实验中，你将实验使用Java的HashMaps和枚举数据类型。你将实现一些不同的枚举类，其中一个以定制类作为值。在Driver类中，你将创建几个不同的HashMaps - 其中一个将字符串映射到枚举数据类型，另一个将枚举类型的不同值之间进行映射。另外，你的实现将对一个HashMap进行迭代。
+在本实验中，你将体验使用Java的HashMaps和枚举数据类型。你将实现一些不同的枚举类，其中一个以定制类作为值。在Driver类中，你将创建几个不同的HashMaps - 其中一个将字符串映射到枚举数据类型，另一个在枚举类型的不同值之间进行映射。另外，你的实现将对一个HashMap进行遍历。
 
 # 学习目标
 完成本实验后，你应该能够：
 1. 创建一个枚举数据类型
-2. 创建并添加项目到一个HashMap
+2. 创建并添加项到一个HashMap
 3. 使用Key从HashMap中取值
-4. 迭代一个HashMap并打印信息
+4. 遍历一个HashMap并打印信息
 
 # 准备
 将现有的lab8实现导入到你的eclipse工作区，
 - 下载[lab8](lab8.zip)实现
 - 在Eclipse中，选择*File/Import*
 - 选择*General/Existing projects into worksapce*，点击*Next*
-- 选择*Select archive file*，导航到lab8.zip文件，点击*Next*
+- 选择*Select archive file*，导航到lab8.zip文件，点击*Finish*
 
 # UML设计 - 表示不同的Pokemon
 下面是本实验的UML表示，你的任务是实现这些类，并编写相应的单元测试。
@@ -26,7 +26,7 @@
 - BULBASAUR：性格 - RELAXED，类型 - GRASS
 - CHARMANDER：性格 - BRAVE，类型 - FIRE
 - SQUIRTLE：性格 - QUIET，类型 - WATER
-Pokeman的类型对其战斗力有很大影响，某些类型之间有相互克制作用，如下表定义：
+Pokemon的类型对其战斗力有很大影响，某些类型之间有相互克制作用，如下表定义：
 
 | 类型 | 克制类型 |
 |:-----:|:--------| 
@@ -46,10 +46,10 @@ Pokeman的类型对其战斗力有很大影响，某些类型之间有相互克�
 - 我们建议你从类分级的底部开始：先实现不依赖于其它类的类
 - 实例变量和方法名的命名按照UML所示
 - 除UML规范以外，不要为类增加额外的功能
-- 不要忘记增量添加注释文档！
+- 不要忘记添加注释文档！
 
 ### 步骤3
-创建JUnit测试类对你的所有代码进行全面测试
+创建JUnit测试类,对你的所有代码进行全面测试
 - 确保所有功能正确
 - 确保所有类和方法被测试覆盖。
 
@@ -61,7 +61,7 @@ Pokeman的类型对其战斗力有很大影响，某些类型之间有相互克�
 ### PokemonType枚举
 该枚举有如下成员：*FIRE*，*GRASS*，*WATER*。
 
-PokemonType枚举类型包含所有可能Pokemon类型的一个子集（实验中我们只用了三个，实际上远不止这些）。
+PokemonType枚举类型包含所有可能的Pokemon类型的一个子集（实验中我们只用了三个，实际上远不止这些）。
 
 如前所述，Pokemon的类型影响其战斗力，类型之间有相互克制关系。为了表达类型成员之间的弱/强相互克制关系，我们用两个HashMaps存储这些关系：*strengthMap*和*weaknessMap*。*strengthMap*表达某个类型和它强克制的类型之间的映射，*weaknessMap*表达某个类型和它弱克制的类型之间的关系。
 
@@ -103,7 +103,7 @@ a brave water type
 
 ### Pokemon枚举类型
 *Pokemon*枚举是所有可能*Pokemon*的一个子集，该枚举有如下成员：*BULBASAUR*，*CHARMANDER*和*SQUIRTLE*。
-- *Pokemon constructor*：该构造函数接受一个*PokemonInfo*实例并存于恰当的实例变量，
+- *Pokemon constructor*：该构造函数接受一个*PokemonInfo*实例并存入恰当的实例变量，
 - *getNature()*:该方法返回*Pokemon*的*Nature*，
 - *getPokemonType()*：该方法返回*Pokemon*的*PokemonType*，
 - *toString()*：该方法返回*Pokemon*的描述字符串，格式如下：
@@ -116,7 +116,7 @@ Bulbasaur: a quiet grass type
 ```
 
 ### Driver类
-Driver类创建和初始化一个HashMap，key为字符串，value为*Pokemon*枚举。它也提示用户是对HashMap中的单个还是一组Pokemon输出信息。如果用户选择单个，那么程序就输出指定Pokemon的信息，如果用不选择一组，那么HashMap中的所有Pokemon的信息都被输出。
+Driver类创建和初始化一个HashMap，key为字符串，value为*Pokemon*枚举。它也提示用户是对HashMap中的单个还是一组Pokemon输出信息。如果用户选择单个，那么程序就输出指定Pokemon的信息，如果用户选择一组，那么HashMap中的所有Pokemon的信息都被输出。
 - 主菜单
 ```
 Professor Oak, the Pokemon professor, presents you with three pokeballs and tells you that you can choose one as your first Pokemon!
@@ -128,7 +128,7 @@ Please select an option:
 ```
 Please choose from the folloing Pokemon: [SQR, BLB, CHR]
 ```
-**注意**：集合是无序的，所以Pokemon列表可是任意顺序。
+**注意**：集合是无序的，所以Pokemon列表可能是任意顺序。
 
 请使用*BufferedReader*接收用户输入。你的代码需要处理用户输入的任何选择，例如，非1和2的数字，字母，未列出的Pokemon，等等。如果输入不正确，你的程序必须重新提示用户输入，直到输入正确。
 
