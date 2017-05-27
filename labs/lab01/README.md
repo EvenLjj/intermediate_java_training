@@ -125,10 +125,11 @@ public static void main(String[] args) throws IOException {
 
 ```java
 /**
+	<A short, abstract description of the file>
+	
     @author <your name(s)>
     @version <today’s date>
     Lab <number>
-    <A short, abstract description of the file>
 */
 ```
 其中```<some text>```表示你要替换的部分。
