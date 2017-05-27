@@ -166,7 +166,7 @@
 如果一个**JList**允许你选择超过一个项目，你可以通过调用**getSelectedIndices()**，来访问选中项的索引列表。
 如果项目是事前不知道的，或者会随时间改变（如我们的年份列表，我们在加载数据之前无法提前知道），我们就必须使用某种形式的**ListModel**。**DefaultListModel**类是一个可以添加或者清除项目的**List**。每次这个列表变化时，**DefaultListModel**会自动通知**JList**列表改变了，这会导致**JList**显示界面的更新。可以通过向**JList**构造函数传递一个*ListModel**引用的方式，将**ListModel**和**JList**关联。
 - 每一个**JList**被置于一个**JScrollPane**中。也就是说GUI会使用一个固定大小的pane来呈现信息，如果信息太大无法在固定区域呈现的话，则pane会自动提供滚动条。如果信息大小正好，则滚动条会自动隐藏。
-- **JTextFields**缺省是用于从用户接收文本输入的。但是，通过将其*editable*属性设置为*false*，它们可以被用作仅用于信息输出的组件。我们可以通过设定**JTextField**可以容纳的字符数来定义其宽度。并且，**JTextField**中的文本可以被用户用鼠标操作选中和拷贝。
+- **JTextFields**缺省是用于从用户接收文本输入的。但是，通过将其*editable*属性设置为*false*，它们可以被用作仅用于信息展示的组件。我们可以通过设定**JTextField**可以容纳的字符数来定义其宽度。并且，**JTextField**中的文本可以被用户用鼠标操作选中和拷贝。
 - **JTextArea**可以显示多行文本。我们建议如下设置：**setWrapStyleWord(true)**和**setLineWrap(true)**
 
 
