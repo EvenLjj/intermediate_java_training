@@ -35,7 +35,7 @@
 |第 9 课| GUI基础，事件 | [GUI基础](labs/lab09/README.md) | NA |
 |第 10 课| GUI&Graphics | [Graphics绘制形状](labs/lab10/README.md) | [项目4](projects/proj4/README.md) |
 |第 11 课| 事件驱动编程 | [事件驱动绘图](labs/lab11/README.md) | NA | 
-|第 12 课| GUI组件，二进制文件I/O | [二进制文件I/O](lab/lab12/README.md) | NA |
+|第 12 课| GUI组件，二进制文件I/O | [二进制文件I/O](labs/lab12/README.md) | NA |
 |第 13 课| 递归 | [递归](labs/lab13/README.md) | [项目5](projects/proj5/README.md) |
 
 ### 授权许可
