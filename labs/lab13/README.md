@@ -68,7 +68,7 @@
 
 # 实验说明
 UML中展示的所有类在lab12.zip中都有提供。
-1. 仔细阅读现存类，实现其中标记TODO的地方。
+1. 仔细阅读现有类，实现其中标记TODO的地方。
 2. 除了我们规定之外，不要为类添加额外功能。
 3. 不要忘记文档！
 
@@ -90,7 +90,7 @@ UML中展示的所有类在lab12.zip中都有提供。
 
 ![circle](images/circle.png)
 
-*SierpinskiTriangle*类有一个称为*computeVertex()*的助手方法，接受一个中心点，一个半径和一个角度作为参数。该方法开始时在指定中心点上方*radius*单位的点，后续点依次围绕中心点旋转一个角度。
+*SierpinskiTriangle*类有一个称为*computeVertex()*的助手方法，接受一个中心点，一个半径和一个角度作为参数。该方法开始时在指定中心点上方*radius*单位处生成一个点，后续点依次围绕中心点旋转一个角度。
 
 ![angle](images/angle.png)
 
