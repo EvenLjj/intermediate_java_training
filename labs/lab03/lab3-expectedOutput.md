@@ -1,13 +1,13 @@
 ### Pokemon toString()方法
 Pokemon类中的toString()方法返回一个如下格式的字符串：
-- 名称name，左对齐，宽度25
+- 名称name，左对齐，长度25
 - 一个空格
-- 类型1，左对齐，宽度12
+- 类型1，左对齐，长度12
 - 一个空格
-- 类型2，左对齐，宽度12（即使pokemon只有一个类型）
+- 类型2，左对齐，长度12（即使pokemon只有一个类型）
 - 一个空格
 - "Generation:"
-- 代，左对齐，宽度6
+- 代，左对齐，长度6
 - "Legendary"如果pokemon是传奇的
 
 ![pokemon output](images/pokemon_output.png)
@@ -21,7 +21,7 @@ PokemonTeam类中的toString()方法返回一个如下格式的字符串：
 - 一个空行
 - 所有第一代和传奇的pokemon
 - 两个空行
-- "Third Generation Psychic Pokemon."
+- "Third Generation Psychic Pokemon:"
 - 一个空行
 - 所有第三代通灵类型的pokemon
 - 两个空行

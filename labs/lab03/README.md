@@ -66,7 +66,7 @@
 - `Pokemon`构造函数，传入和一个pokemon对应的字符串，解析该字符串并填充类变量
 - `isFirstGenLegendary()`，该方法表明一个*Pokemon*对象是否是第一代并且是传奇的
 - `isThirdGenPsychic()`，该方法表明一个*Pokemon*对象是否是第三代并且是通灵类型的
-- `isLegendaryWater`，该方法表明一个*Pokemon*对象是否是第三代水类型的
+- `isLegendaryWater`，该方法表明一个*Pokemon*对象是否是传奇并且是水类型的
 - `toString()`，该方法返回一个字符串，格式见[lab3-expectedOutput](lab3-expectedOutput.md)
 - 一组访问器getters方法，可以用Eclipse自动生成
 
