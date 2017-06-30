@@ -19,7 +19,7 @@
 
 以斜体表示的类是抽象类或者接口。具体的子类必须实现抽象父类的所有方法。在本实验中，**Item**，**Consumable**和**Weapon**是抽象类。
 
-从**Item**到**Comparable**的线表示**Item**必须实现**Comparable**接口。类似的，**ItemWeightComparator**类必须实现**ItemComparator**接口（该接口继承**Comparator**接口）。**ItemWeightComparator**根据高度比较不同的库存项。
+从**Item**到**Comparable**的线表示**Item**必须实现**Comparable**接口。类似的，**ItemWeightComparator**类必须实现**ItemComparator**接口（该接口继承**Comparator**接口）。**ItemWeightComparator**根据重量比较不同的库存项。
 
 # 实验步骤
 **Item**类是游戏中存在的所有类型库存项的公共祖先：
@@ -70,11 +70,11 @@ You can't use the hammer, it is broken.
 
 和实验2非常类似，**Inventory**在游戏中是items的容器。该类已经被部分实现，但你需要添加如下方法：
 - *Inventory.sort()*：根据*值value*对**Inventory**实例中的items进行排序
-- *Inventory.sort(ItemComparator comparator)*：根据*高度weight*对**Inventory**实例中的items进行排序。
+- *Inventory.sort(ItemComparator comparator)*：根据*重量weight*对**Inventory**实例中的items进行排序。
 
 **Consumable**类表示可以被玩家吃的items。Consumables可以被标记为已经消费了，可以是变质的。这些属性分别被存储在*consumed*和*spoiled*实例变量中。新创建的**Consumable**对象应该将其*consumed*字段设置为false。
 
-- *Consumable.use()*：如果一个**Consumable**没有变质也没有被消费，调用这个方法仅返回对*Consumable.eat()*调用的返回值。对于一个name为"break"并且已经被消费的**Consumable**，该方法返回如下：
+- *Consumable.use()*：如果一个**Consumable**没有变质也没有被消费，调用这个方法仅返回对*Consumable.eat()*调用的返回值。对于一个name为"bread"并且已经被消费的**Consumable**，该方法返回如下：
 ```
 There is nothing left of the bread to consume.
 ```
